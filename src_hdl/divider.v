@@ -26,7 +26,7 @@ module Divider(
     output reg clk_div
     );
 	 
-	 localparam [26:0] clk_1s_constant = 27'd100_000;
+	 localparam [26:0] clk_1s_constant = 27'd100_000_000;
 	 reg [26:0]counter = clk_1s_constant;
 	 always@(posedge clk)
 		begin
